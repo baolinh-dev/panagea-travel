@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panagea - Travel and Tours </title>    
+    <!-- Link Favi Icon -->
+    <link rel="icon" type="image/x-icon" href="./images/favi-icon-pegea.png">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./styles/style.css">  
+    <!-- Link Responsive CSS --> 
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- Link CDN Owl Carousel CSS --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Bootrap CSS--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link Fonts Awesome --> 
+    <link rel="stylesheet" href="./icons/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+    <!-- Link Themify Icon CSS--> 
+    <link rel="stylesheet" href="./icons/themify-icons.css">  
+    <!-- Link Google Web Font --> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+</head>
+<body>  
+    <button id="btnScrollToTop"> 
+        <i class="material-icons">arrow_upward</i>
+    </button>
+    <div id="main">
+        <!-- Start: Header -->
+        <header id="header" class="header header--scroll">    
+            <a href="index.html"><img src="./images/logo.png" alt="Logo" class="logo"></a>
+            <div class="navigation-container">
+                <ul class="navigation">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="tour.html">Tours</a></li>
+                    <li><a href="hotel.html">Khánh sạn</a></li>
+                    <li><a href="restaurant.html">Nhà hàng</a></li>
+                    <li><a href="news.html">Tin tức</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li><a href="about.html">Chi tiết</a></li>
+                </ul> 
+                <ul class="second-navigation">
+                    <li><a href="#" class="fa-solid fa-arrow-right-to-bracket open-modal-btn"></a></li>
+                    <li>  
+                        <h6 class="cart">
+                            <a href="#" class="fa-solid fa-cart-shopping"></a> 
+                        </h6>
+                    </li> 
+                </ul>  
+            </div>
+        </header>  
+        <!-- End: Header -->   
+        <!-- Start: Header Mobile --> 
+        <header class="header-mobi header--scroll">    
+            <a href="#" class="fa-solid fa-bars menu-mobile-btn"></a>
+            <a href="index.html"><img src="./images/logo.png" alt="Logo" class="logo"></a>
+            <ul class="second-navigation-mobi">
+                <li><a href="#" class="fa-solid fa-arrow-right-to-bracket open-modal-btn"></a></li>
+                <li><a href="#" class="fa-solid fa-cart-shopping"></a></li>
+            </ul>  
+            <ul class="navigation-mobi hide">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="tour.html">Tours</a></li>
+                <li><a href="hotel.html">Khánh sạn</a></li>
+                <li><a href="restaurant.html">Nhà hàng</a></li>
+                <li><a href="news.html">Tin tức</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="about.html">Chi tiết</a></li>
+            </ul> 
+        </header>         
+        <!-- End: Header Mobile -->
+        <!-- Start: Slider -->
+        <div id="slider">
+            <section class="home" id="home">
+                <div class="content"> 
+                    <h3>PANAGEA TRAVEL</h3>
+                    <p>Hơn cả một hành trình đó là dấu chân của kỉ niệm và cảm xúc</p> 
+                    <a href="#" class="btn btn-danger">Xem thêm</a>
+                </div>
+                <div class="controls">
+                    <span class="vid-btn active" data-src="images/slide-ha-long.mp4"></span>
+                    <span class="vid-btn" data-src="images/slide-phu-quoc.mp4"></span>
+                    <span class="vid-btn" data-src="images/slide-ba-na.mp4"></span>
+                    <span class="vid-btn" data-src="images/slide-mui-ne.mp4"></span>
+                    <span class="vid-btn" data-src="images/slide-hoi-an.mp4"></span>
+                </div>
+                <div class="video-container">
+                    <video src="images/slide-ha-long.mp4" id="video-slider" loop autoplay muted></video>
+                </div>
+            </section> 
+        </div> 
+        <!-- End: Slider -->
+        <div id="content"> 
+            <!-- Start: Tour -->
+            <div class="tours"> 
+                <div class="common-detail">
+                    <span class="content--line"><em> </em></span> 
+                    <h2>Tour du lịch phổ biến</h2> 
+                    <p>Những tour du lịch hấp dẫn nhất mà bạn không thể bỏ lỡ</p>
+                </div> 
+                <div class="tours--list">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item tour-main"> 
+                            <div class="card" style="width: 100%"> 
+                                <small>Historic</small> 
+                            <div class="card-img-top-contain">
+                                <img class="card-img-top" src="./images/tou-chua-ha-noi.jpg" alt="Card image">
+                            </div>  
+                            <div class="card-body tour--item"> 
+                                <h4 class="card-title">Hồ Hoàn Kiếm</h4>
+                                <p class="card-text">Địa điểm du lịch hùng vĩ, hấp dẫn hứa hẹn sẽ mạng lại cho bạn những trải nghiệm không thể quên</p>
+                                <span> Chỉ từ <strong>400k</strong> / người </span>
+                                <a href="tour.html" class="common-btn-view with-full un-border">Xem thêm</a>  
+                            </div>
+                            </div>
+                        </div>
+                        <div class="item tour-main">    
+                            <div class="card" style="width: 100%"> 
+                                <small>Historic</small> 
+                            <div class="card-img-top-contain">
+                                <img class="card-img-top" src="./images/tou-chua-hue.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body tour--item">
+                                <h4 class="card-title">Chùa Thiên Mụ</h4>
+                                <p class="card-text">Địa điểm du lịch hùng vĩ, hấp dẫn hứa hẹn sẽ mạng lại cho bạn những trải nghiệm không thể quên</p>
+                                <span> Chỉ từ <strong>400k</strong> / người </span>
+                                <a href="tour.html" class="common-btn-view with-full un-border">Xem thêm</a> 
+                            </div>
+                            </div>
+                        </div>
+                        <div class="item tour-main"> 
+                            <div class="card" style="width: 100%"> 
+                                <small>Historic</small> 
+                            <div class="card-img-top-contain">
+                                <img class="card-img-top" src="./images/tou-chua-mot-cot.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body tour--item">
+                                <h4 class="card-title">Chùa Một Cột</h4>
+                                <p class="card-text">Địa điểm du lịch hùng vĩ, hấp dẫn hứa hẹn sẽ mạng lại cho bạn những trải nghiệm không thể quên</p>
+                                <span> Chỉ từ <strong>400k</strong> / người </span>
+                                <a href="tour.html" class="common-btn-view with-full un-border">Xem thêm</a> 
+                            </div>
+                            </div>
+                        </div>
+                        <div class="item tour-main"> 
+                            <div class="card" style="width: 100%"> 
+                                <small>Historic</small> 
+                            <div class="card-img-top-contain"> 
+                                <img class="card-img-top" src="./images/tou-co-do-hue.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body tour--item">
+                                <h4 class="card-title">Cố Đô Huế</h4>
+                                <p class="card-text">Địa điểm du lịch hùng vĩ, hấp dẫn hứa hẹn sẽ mạng lại cho bạn những trải nghiệm không thể quên</p>
+                                <span> Chỉ từ <strong>400k</strong> / người </span>
+                                <a href="tour.html" class="common-btn-view with-full un-border">Xem thêm</a> 
+                            </div>
+                            </div>
+                        </div>
+                        <div class="item tour-main"> 
+                            <div class="card" style="width: 100%"> 
+                                <small>Historic</small> 
+                            <div class="card-img-top-contain">
+                                <img class="card-img-top" src="./images/tou-hoi-an.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body tour--item">
+                                <h4 class="card-title">Hội An</h4>
+                                <p class="card-text">Địa điểm du lịch hùng vĩ, hấp dẫn hứa hẹn sẽ mạng lại cho bạn những trải nghiệm không thể quên</p>
+                                <span> Chỉ từ <strong>400k</strong> / người </span>
+                                <a href="tour.html" class="common-btn-view with-full un-border">Xem thêm</a> 
+                            </div>
+                            </div>
+                        </div>
+                        <div class="item tour-main"> 
+                            <div class="card" style="width: 100%"> 
+                                <small>Historic</small> 
+                            <div class="card-img-top-contain">
+                                <img class="card-img-top" src="./images/tou-nha-trang.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body tour--item">
+                                <h4 class="card-title">Biển Nha Trang</h4>
+                                <p class="card-text">Địa điểm du lịch hùng vĩ, hấp dẫn hứa hẹn sẽ mạng lại cho bạn những trải nghiệm không thể quên</p>
+                                <span> Chỉ từ <strong>400k</strong> / người </span>
+                                <a href="tour.html" class="common-btn-view with-full un-border">Xem thêm</a> 
+                            </div>
+                            </div>
+                        </div>
+                        <div class="item tour-main"> 
+                            <div class="card" style="width: 100%"> 
+                                <small>Historic</small> 
+                            <div class="card-img-top-contain"> 
+                                <img class="card-img-top" src="./images/tou-phong-nha-ke-bang.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body tour--item">
+                                <h4 class="card-title">Động Phong Nha</h4>
+                                <p class="card-text">Địa điểm du lịch hùng vĩ, hấp dẫn hứa hẹn sẽ mạng lại cho bạn những trải nghiệm không thể quên</p>
+                                <span> Chỉ từ <strong>400k</strong> / người </span>
+                                <a href="tour.html" class="common-btn-view with-full un-border">Xem thêm</a> 
+                            </div>
+                            </div>
+                        </div>
+                        <div class="item tour-main"> 
+                            <div class="card" style="width: 100%"> 
+                                <small>Historic</small> 
+                            <div class="card-img-top-contain">
+                                <img class="card-img-top" src="./images/tou-ruong-bac-thang.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body tour--item">
+                                <h4 class="card-title">Mù Cang Chải</h4>
+                                <p class="card-text">Địa điểm du lịch hùng vĩ, hấp dẫn hứa hẹn sẽ mạng lại cho bạn những trải nghiệm không thể quên</p>
+                                <span> Chỉ từ <strong>400k</strong> / người </span>
+                                <a href="tour.html" class="common-btn-view with-full un-border">Xem thêm</a> 
+                            </div>
+                            </div>
+                        </div>
+                        <div class="item tour-main"> 
+                            <div class="card" style="width: 100%"> 
+                                <small>Historic</small> 
+                            <div class="card-img-top-contain">
+                                <img class="card-img-top" src="./images/tou-tay-vang.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body tour--item">
+                                <h4 class="card-title">Bà Nà Bills</h4>
+                                <p class="card-text">Địa điểm du lịch hùng vĩ, hấp dẫn hứa hẹn sẽ mạng lại cho bạn những trải nghiệm không thể quên</p>
+                                <span> Chỉ từ <strong>400k</strong> / người </span>
+                                <a href="tour.html" class="common-btn-view with-full un-border">Xem thêm</a> 
+                            </div>
+                            </div>
+                        </div>
+                        <div class="item tour-main"> 
+                            <div class="card" style="width: 100%"> 
+                                <small>Historic</small> 
+                            <div class="card-img-top-contain">
+                                <img class="card-img-top" src="./images/tou-vinh-ha-long-2.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body tour--item">
+                                <h4 class="card-title">Vinh Hạ Long</h4>
+                                <p class="card-text">Địa điểm du lịch hùng vĩ, hấp dẫn hứa hẹn sẽ mạng lại cho bạn những trải nghiệm không thể quên</p>
+                                <span> Chỉ từ <strong>400k</strong> / người </span>
+                                <a href="tour.html" class="btn btn-danger with-full btn -card-more">Xem thêm</a> 
+                            </div>
+                            </div>
+                        </div>
+                        <div class="item tour-main"> 
+                            <div class="card" style="width: 100%"> 
+                                <small>Historic</small> 
+                            <div class="card-img-top-contain">
+                                <img class="card-img-top" src="./images/tou-sapa.png" alt="Card image">
+                            </div>
+                            <div class="card-body tour--item">
+                                <h4 class="card-title">Sa Pa</h4>
+                                <p class="card-text">Địa điểm du lịch hùng vĩ, hấp dẫn hứa hẹn sẽ mạng lại cho bạn những trải nghiệm không thể quên</p>
+                                <span> Chỉ từ <strong>400k</strong> / người </span>
+                                <a href="tour.html" class="btn btn-danger with-full btn -card-more">Xem thêm</a> 
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            <a href="tour.html" class="common-btn-view f-right">View all tour</a> 
+            </div>   
+            <!-- End: Tour --> 
+            <!-- Start: Hotels --> 
+            <div class="container"> 
+                <div class="hotels--container mb-5">
+                    <div class="common-descip">
+                        <span class="content--line__left"> <em> </em> </span> 
+                        <h2>Những khách sạn và chỗ ở phổ biến</h2> 
+                        <p>Điểm dừng chân không thể hợp lí hơn nhất sau một chuyến đi dài</p>
+                    </div> 
+                    <div class="hotel-main"> 
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-12 mb-1 hotel-img-container"> 
+                                    <div class="score">8.5</div> 
+                                    <div class="oveflo-hidden bor-radi-4">
+                                        <img class="hotel-img bor-radi-4" src="./images/hotel_1.jpg" alt=""> 
+                                    </div>
+                                    <div class="hotel-des">
+                                        <ul class="start-rate"> 
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </ul> 
+                                        <h3>Mariott Hotel</h3>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12 mb-1 hotel-img-container"> 
+                                    <div class="score">8.5</div> 
+                                    <div class="oveflo-hidden bor-radi-4">
+                                        <img class="hotel-img bor-radi-4" src="./images/hotel_2.jpg" alt=""> 
+                                    </div>
+                                    <div class="hotel-des">
+                                        <ul class="start-rate"> 
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </ul> 
+                                        <h3>Mariott Hotel</h3>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12 mb-1 hotel-img-container"> 
+                                    <div class="score">8.5</div> 
+                                    <div class="oveflo-hidden bor-radi-4">
+                                        <img class="hotel-img bor-radi-4" src="./images/hotel_3.jpg" alt=""> 
+                                    </div>
+                                    <div class="hotel-des">
+                                        <ul class="start-rate"> 
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </ul> 
+                                        <h3>Mariott Hotel</h3>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12 mb-1 hotel-img-container"> 
+                                    <div class="score">8.5</div> 
+                                    <div class="oveflo-hidden bor-radi-4">
+                                        <img class="hotel-img bor-radi-4" src="./images/hotel_4.jpg" alt=""> 
+                                    </div>
+                                    <div class="hotel-des">
+                                        <ul class="start-rate"> 
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </ul> 
+                                        <h3>Mariott Hotel</h3>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>  
+                    <a class="view-all-btn" href="hotel.html"><strong class="font-size-14">Xem tất cả (120)<i class="ti-angle-right"></i> </strong></a>  
+                </div>   
+            </div>
+            <!-- End: Hotels --> 
+            <!-- Start: Restaurant -->
+            <div class="container"> 
+                <div class="hotels--container">
+                    <div class="common-descip">
+                        <span class="content--line__left"> <em> </em> </span> 
+                        <h2>Những nhà hàng sang trọng bậc nhất</h2> 
+                        <p>Nhà hàng với những món ăn đậm đà hương vị bản sắc của từng vùng miền.</p>
+                    </div> 
+                    <div class="hotel-main"> 
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-12 mb-1 hotel-img-container"> 
+                                    <div class="score">8.5</div> 
+                                    <div class="oveflo-hidden bor-radi-4">
+                                        <img class="hotel-img bor-radi-4" src="./images/restaurant_1.jpg" alt="">  
+                                    </div>
+                                    <div class="hotel-des">
+                                        <ul class="start-rate"> 
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </ul> 
+                                        <h3>Mariott Restaurant</h3>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12 mb-1 hotel-img-container"> 
+                                    <div class="score">8.5</div> 
+                                    <div class="oveflo-hidden bor-radi-4">
+                                        <img class="hotel-img bor-radi-4" src="./images/restaurant_2.jpg" alt=""> 
+                                    </div>
+                                    <div class="hotel-des">
+                                        <ul class="start-rate"> 
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </ul> 
+                                        <h3>Mariott Restaurant</h3>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12 mb-1 hotel-img-container"> 
+                                    <div class="score">8.5</div> 
+                                    <div class="oveflo-hidden bor-radi-4">
+                                        <img class="hotel-img bor-radi-4" src="./images/restaurant_3.jpg" alt=""> 
+                                    </div>
+                                    <div class="hotel-des">
+                                        <ul class="start-rate"> 
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </ul> 
+                                        <h3>Mariott Restaurant</h3>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12 mb-1 hotel-img-container"> 
+                                    <div class="score">8.5</div> 
+                                    <div class="oveflo-hidden bor-radi-4">
+                                        <img class="hotel-img bor-radi-4" src="./images/restaurant_4.jpg" alt=""> 
+                                    </div>
+                                    <div class="hotel-des">
+                                        <ul class="start-rate"> 
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </ul> 
+                                        <h3>Mariott Restaurant</h3>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>  
+                    <a class="view-all-btn font-si-14" href="restaurant.html"><strong class="font-size-14">Xem tất cả (120)<i class="ti-angle-right view-all-btn"></i> </strong></a>  
+                </div>   
+            </div> 
+            <!-- End: Restaurant --> 
+            <!-- Start: Adventure -->
+            <div class="adventures">  
+                <div class="container mt-5">
+                    <div class="adventure-banner">
+                        <div class="adventure-detail">
+                            <h3>Những Hành Trình</h3>  
+                            <p>Chuyến Phiêu Lưu Kì Thú Đang Chờ Đón Bạn</p>  
+                            <a href="tour.html">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <!-- End: Adventure --> 
+            <!-- Start: New -->
+            <div id="new" class="news">  
+                <div class="container">
+                    <div class="common-detail">
+                        <span class="content--line"><em></em></span> 
+                        <h2>Tin tức và sự kiện</h2> 
+                        <p>Tin tức nổi bật nhất về du lịch Việt Nam luôn được cập nhật hàng ngày.</p>
+                    </div>     
+                    <div class="container">
+                        <div class="row new mb-3"> 
+                            <div class="col-lg-6 col-md-12 col-12 new-main mb-3">  
+                                <div class="new-image">
+                                    <div class="com-img-container">
+                                        <img src="./images/news_home_1.png" class="common-img rounded" alt="Hotel">
+                                    </div>  
+                                    <div class="new-box">
+                                        <strong>26</strong> 
+                                        Dec
+                                    </div>  
+                                </div>
+                                    <div class="new-detail"> 
+                                        <ul>
+                                            <li>Da Nang</li>
+                                            <li>17.6.2022</li>
+                                        </ul> 
+                                        <h4>Bien My Khe</h4> 
+                                        <p>Được bình chọn từ tạp chí Forbes, bãi biển Mỹ Khê được đánh giá là bãi biển quyến rũ nhất hành tinh.</p>
+                                    </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-12 new-main mb-3">  
+                                <div class="new-image">
+                                    <div class="com-img-container">
+                                        <img src="./images/news_home_3 (1).jpg" class="common-img rounded" alt="Hotel">
+                                    </div>  
+                                    <div class="new-box">
+                                        <strong>12</strong> 
+                                        Dec
+                                    </div>  
+                                </div> 
+                                    <div class="new-detail"> 
+                                        <ul>
+                                            <li>Da Nang</li>
+                                            <li>27.06.2022</li>
+                                        </ul> 
+                                        <h4>Bien My Khe</h4> 
+                                        <p>Được bình chọn từ tạp chí Forbes, bãi biển Mỹ Khê được đánh giá là bãi biển quyến rũ nhất hành tinh.</p>
+                                    </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-12 new-main mb-3">  
+                                <div class="new-image">
+                                    <div class="com-img-container">
+                                        <img src="./images/news_home_4 (1).jpg" class="common-img rounded" alt="Hotel">
+                                    </div>  
+                                    <div class="new-box">
+                                        <strong>10</strong> 
+                                        Dec
+                                    </div>  
+                                </div> 
+                                    <div class="new-detail"> 
+                                        <ul>
+                                            <li>Da Nang</li>
+                                            <li>27.06.2022</li>
+                                        </ul> 
+                                        <h4>Bien My Khe</h4> 
+                                        <p>Được bình chọn từ tạp chí Forbes, bãi biển Mỹ Khê được đánh giá là bãi biển quyến rũ nhất hành tinh.</p>
+                                    </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-12 new-main mb-3">   
+                                <div class="new-image">
+                                    <div class="com-img-container">
+                                        <img src="./images/new-home-2.jpg" class="common-img rounded" alt="Hotel">
+                                    </div>  
+                                    <div class="new-box">
+                                        <strong>31</strong> 
+                                        Dec
+                                    </div>  
+                                </div>
+                                    <div class="new-detail"> 
+                                        <ul>
+                                            <li>Da Nang</li>
+                                            <li>27.06.2022</li>
+                                        </ul> 
+                                        <h4>Bien My Khe</h4> 
+                                        <p>Được bình chọn từ tạp chí Forbes, bãi biển Mỹ Khê được đánh giá là bãi biển quyến rũ nhất hành tinh.</p>
+                                    </div>
+                            </div>
+                        </div>   
+                    </div>
+            <a type="button" href="news.html" class="common-btn-view mb-5 f-right">Xem thêm</a> 
+            
+                </div>
+            </div>  
+            <!-- End: New --> 
+            <!-- Start: About -->
+            <div class="about">
+                <div class="box-about">
+                    <h3>Tận hưởng chuyến đi tuyệt vời cùng chúng tôi</h3> 
+                    <p>Panegea rất hân hạnh được đồng hành cùng các bạn trong những chuyến đi nghỉ dưỡng, vui chơi với gia đình, bạn bè thân yêu của mình. </p>  
+                    <p>-Panegea-</p>
+                    <a href="" class="common-btn-view-half btn-box-about">Xem thêm</a>
+                </div>
+            </div> 
+            <!-- End: About -->
+        </div>  
+        <!-- Footer -->
+        <div id="footer">
+            <div class="container">  
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 footer--main"> 
+                        <a href="index.html"><img src="./images/logo.png" alt="Logo" class="logo"></a> 
+                        <p>Panagea là một công ty chuyên cung cấp các dịch vụ du lịch, cung cấp khách sạn, 
+                            nhà hàng, cập nhật các tour du lịch với chất lượng tuyệt vời  
+                            <br>
+                            Panagea rất hân hạnh được đồng hành cùng các bạn trong những chuyến du lịch 
+                            trong tương lai
+                        </p>
+                        <ul>
+                            <li><a href="">Theo dõi chúng tôi tại</a></li>
+                            <li><a href=""> <i class="ti-facebook"></i> </a></li>
+                            <li><a href=""> <i class="ti-instagram"></i> </a></li>
+                            <li><a href=""> <i class="ti-stack-overflow"></i> </a></li>
+                            <li><a href=""> <i class="ti-linkedin"></i> </a></li>
+                            <li><a href=""> <i class="ti-twitter-alt"></i> </a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-lg-3 col-md-3 col-12 col-3 footer--links"> 
+                        <h5>Những liên kết hữu ích</h5> 
+                        <ul>
+                            <li><a href="">Trang chủ</a></li>
+                            <li><a href="">Nhà hàng</a></li>
+                            <li><a href="">Khách sạn</a></li>
+                            <li><a href="">Tours</a></li> 
+                            <li><a href="">Liên hệ</a></li> 
+                        </ul>
+                    </div> 
+                    <div class="col-lg-3 col-md-6 col-12 col-3 footer--contacts"> 
+                        <h5>Liên hệ</h5> 
+                        <i class="ti-mobile">+ 61 23 8093 3400</i>
+                        <i class="ti-email">  baoolink@gmail.com</i> 
+                        <h5>Thư tín</h5>
+                        <div class="form-group">
+                                <input type="email" name="email_newsletter" id="email_newsletter" class="footer--email" placeholder="Your email">
+                                <input type="submit" value="Submit" id="submit-newsletter" class="footer--submit">
+                            </div>
+                        </div>
+                </div>
+            </div> 
+        </div>  
+        <!-- Start: Footer --> 
+        <!-- Start: Modal --> 
+        <div class="modal--overlay">
+            <div class="modal--container">
+                <div class="modal--header">
+                    <h6>Sign in</h6> 
+                    <i class="fa-solid fa-xmark"></i>
+                </div> 
+                <div class="modal--main">
+                    <a href="" class="ti-facebook mb-3">Login with Facebook</a>
+                    <a href="" class="ti-google">Login with Google</a>
+                    <div class="divier">
+                        <span>Or</span>
+                    </div> 
+                    <div class="form-group email-container mb-3">
+                        <label for="">Email</label> 
+                        <input type="email" class="form-control" name="email" id="email"> 
+                        <i class="ti-email"></i>
+                    </div>
+                    <div class="form-group email-container mb-3">
+                        <label for="">Password</label> 
+                        <input type="password" class="form-control" name="email" id="email"> 
+                        <i class="fa-solid fa-lock"></i>
+                    </div> 
+                    <div class="final-main">
+                        <label for="" class="remember"> 
+                            <input type="checkbox">  
+                            <p> Remember me </p>
+                            <a>Forgot Password?</a>
+                        </label>
+                    </div> 
+                    <div class="modal-login-btn mt-3">
+                        Log in
+                    </div> 
+                    <div class="text-center mt-1 modal-signup">
+                        Don't have an account 
+                        <a href="">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- End: Modal -->
+    </div> 
+    <!-- Link CDN JQuery --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Link CDN Owl Carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Link CDN Bootrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link JS -->
+    <script src="./scrips/scrip.js"></script>  
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panagea - Travel and Tours </title>   
+    <!-- Link Favi Icon -->
+    <link rel="icon" type="image/x-icon" href="./images/favi-icon-pegea.png">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./styles/style.css">   
+    <!-- Link Responsive CSS --> 
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- Link CDN Owl Carousel CSS --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Bootrap CSS--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link Fonts Awesome --> 
+    <link rel="stylesheet" href="./icons/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+    <!-- Link Themify Icon CSS--> 
+    <link rel="stylesheet" href="./icons/themify-icons.css">  
+    <!-- Link Google Web Font --> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>  
+    <button id="btnScrollToTop"> 
+        <i class="material-icons">arrow_upward</i>
+    </button>
+    <div id="main">
+      <!-- Start: Header -->
+      <header id="header" class="header header--scroll">
+        <a href="index.html">
+          <img src="./images/logo.png" alt="Logo" class="logo">
+        </a>
+        <div class="navigation-container">
+          <ul class="navigation">
+            <li>
+              <a href="index.html">Trang chủ</a>
+            </li>
+            <li>
+              <a href="tour.html">Tours</a>
+            </li>
+            <li>
+              <a href="hotel.html">Khánh sạn</a>
+            </li>
+            <li>
+              <a href="restaurant.html">Nhà hàng</a>
+            </li>
+            <li>
+              <a href="news.html">Tin tức</a>
+            </li>
+            <li>
+              <a href="contact.html">Liên hệ</a>
+            </li>
+            <li>
+              <a href="about.html">Chi tiết</a>
+            </li>
+          </ul>
+          <ul class="second-navigation">
+            <li>
+              <a href="#" class="fa-solid fa-arrow-right-to-bracket open-modal-btn"></a>
+            </li>
+            <li>
+              <a href="payment.html" class="fa-solid fa-cart-shopping"></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- End: Header -->
+        <!-- Start: Header Mobile --> 
+        <header class="header-mobi header--scroll">    
+            <a href="#" class="fa-solid fa-bars menu-mobile-btn"></a>
+            <a href="index.html"><img src="./images/logo.png" alt="Logo" class="logo"></a>
+            <ul class="second-navigation-mobi">
+                <li><a href="#" class="fa-solid fa-arrow-right-to-bracket open-modal-btn"></a></li>
+                <li><a href="payment.html" class="fa-solid fa-cart-shopping"></a></li>
+            </ul>  
+            <ul class="navigation-mobi hide">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="tour.html">Tours</a></li>
+                <li><a href="hotel.html">Khánh sạn</a></li>
+                <li><a href="restaurant.html">Nhà hàng</a></li>
+                    <li><a href="news.html">Tin tức</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li><a href="about.html">Chi tiết</a></li>
+            </ul> 
+        </header>         
+        <!-- End: Header Mobile -->   
+        <div id="hote-slider">
+            <div class="tou-tour-detail">
+                <div class="container">
+                    <span></span>   
+                    <h3>Khách sạn</h3>
+                </div>
+            </div>
+        </div> 
+        <div id="tou-content">
+            <div class="container tou-container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6"> 
+                        <div class="card mb-3" style="width: 100%"> 
+                            <small>Historic</small> 
+                            <div class="img-container">
+                                <img class="card-img-top" src="./images/hotel_6.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body tour--item"> 
+                                <a href="hotel-detail.html" class="card-title">Khách sạn Park Hyatt</a>
+                                <p class="card-text">Không gian, nội thất sang trọng, tiện nghi, đầy đủ. Đây sẽ là điểm dừng chân hợp lí nhất sau mỗi chuyến đi</p>
+                                <span> Từ <strong> 700.000 </strong> / 1 đêm </span>
+                            </div>
+                            <div class="tou-card--detail">   
+                                <div class="tou-time"> 
+                                    <i class="fa-solid fa-clock">    </i>
+                                    2 ngày 2 đêm  
+                                </div>
+                                <div class="tou-score">
+                                    <span>
+                                        <strong>Tốt</strong> 
+                                        <em>350 đánh giá</em>
+                                    </span>
+                                    <a href="#" class="btn btn-primary f-right">8.9</a> 
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-lg-4 col-md-6"> 
+                        <div class="card mb-3" style="width: 100%"> 
+                            <small>Historic</small> 
+                            <div class="img-container">
+                                <img class="card-img-top" src="./images/hotel_5.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body tour--item"> 
+                                <a href="hotel-detail.html" class="card-title">Khách sạn Terracotta</a>
+                                <p class="card-text">Không gian, nội thất sang trọng, tiện nghi, đầy đủ. Đây sẽ là điểm dừng chân hợp lí nhất sau mỗi chuyến đi</p>
+                                <span> Từ <strong> 700.000 </strong> / 1 đêm </span>
+                            </div>
+                            <div class="tou-card--detail">   
+                                <div class="tou-time"> 
+                                    <i class="fa-solid fa-clock"></i>
+                                    2 ngày 2 đêm  
+                                </div>
+                                <div class="tou-score">
+                                    <span>
+                                        <strong>Tốt</strong> 
+                                        <em>350 đánh giá</em>
+                                    </span>
+                                    <a href="#" class="btn btn-primary f-right">8.9</a> 
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-lg-4 col-md-6"> 
+                        <div class="card mb-3" style="width: 100%"> 
+                            <small>Historic</small> 
+
+                            <div class="img-container">
+                                <img class="card-img-top" src="./images/hotel_4.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body tour--item"> 
+                                <a href="hotel-detail.html" class="card-title">Khách sạn The Dream Suite</a>
+                                <p class="card-text">Không gian, nội thất sang trọng, tiện nghi, đầy đủ. Đây sẽ là điểm dừng chân hợp lí nhất sau mỗi chuyến đi</p>
+                                <span> Từ <strong> 700.000 </strong> / 1 đêm </span>
+                            </div>
+                            <div class="tou-card--detail">   
+                                <div class="tou-time"> 
+                                    <i class="fa-solid fa-clock">    </i>
+                                    2 ngày 2 đêm  
+                                </div>
+                                <div class="tou-score">
+                                    <span>
+                                        <strong>Tốt</strong> 
+                                        <em>350 đánh giá</em>
+                                    </span>
+                                    <a href="#" class="btn btn-primary f-right">8.9</a> 
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-lg-4 col-md-6"> 
+                        <div class="card mb-3" style="width: 100%"> 
+                            <small>Historic</small> 
+                            <div class="img-container">
+                                <img class="card-img-top" src="./images/hotel_3.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body tour--item"> 
+                                <a href="hotel-detail.html" class="card-title">Khách sạn Doji Stars</a>
+                                <p class="card-text">Không gian, nội thất sang trọng, tiện nghi, đầy đủ. Đây sẽ là điểm dừng chân hợp lí nhất sau mỗi chuyến đi</p>
+                                <span> Từ <strong> 700.000 </strong> / 1 đêm </span>
+                            </div>
+                            <div class="tou-card--detail">   
+                                <div class="tou-time"> 
+                                    <i class="fa-solid fa-clock">    </i>
+                                    2 ngày 2 đêm  
+                                </div>
+                                <div class="tou-score">
+                                    <span>
+                                        <strong>Tốt</strong> 
+                                        <em>350 đánh giá</em>
+                                    </span>
+                                    <a href="#" class="btn btn-primary f-right">8.9</a> 
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-lg-4 col-md-6"> 
+                        <div class="card mb-3" style="width: 100%"> 
+                            <small>Historic</small> 
+
+                            <div class="img-container">
+                                <img class="card-img-top" src="./images/hotel_2.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body tour--item"> 
+                                <a href="hotel-detail.html" class="card-title">Khách sạn Louvre</a>
+                                <p class="card-text">Không gian, nội thất sang trọng, tiện nghi, đầy đủ. Đây sẽ là điểm dừng chân hợp lí nhất sau mỗi chuyến đi</p>
+                                <span> Từ <strong> 700.000 </strong> / 1 đêm </span>
+                            </div>
+                            <div class="tou-card--detail">   
+                                <div class="tou-time"> 
+                                    <i class="fa-solid fa-clock">    </i>
+                                    2 ngày 2 đêm  
+                                </div>
+                                <div class="tou-score">
+                                    <span>
+                                        <strong>Tốt</strong> 
+                                        <em>350 đánh giá</em>
+                                    </span>
+                                    <a href="#" class="btn btn-primary f-right">8.9</a> 
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-lg-4 col-md-6"> 
+                        <div class="card mb-3" style="width: 100%"> 
+                            <small>Historic</small> 
+                            <div class="img-container">
+                                <img class="card-img-top" src="./images/hotel_1.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body tour--item"> 
+                                <a href="hotel-detail.html" class="card-title">Khách sạn Concorde</a>
+                                <p class="card-text">Không gian, nội thất sang trọng, tiện nghi, đầy đủ. Đây sẽ là điểm dừng chân hợp lí nhất sau mỗi chuyến đi</p>
+                                <span> Từ <strong> 700.000 </strong> / 1 đêm </span>
+                            </div>
+                            <div class="tou-card--detail">   
+                                <div class="tou-time"> 
+                                    <i class="fa-solid fa-clock">    </i>
+                                    2 ngày 2 đêm  
+                                </div>
+                                <div class="tou-score">
+                                    <span>
+                                        <strong>Tốt</strong> 
+                                        <em>350 đánh giá</em>
+                                    </span>
+                                    <a href="#" class="btn btn-primary f-right">8.9</a> 
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+            </div>   
+            <div class="btn-container">
+                <button type="button" class="common-btn-view">Tải thêm</button> 
+            </div> 
+            <!-- Start: Payment --> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="box-list">
+                            <i class="ti-info-alt"></i>
+                            <h4>Bạn cần sự giúp đỡ?</h4> 
+                            <p>Liên hệ chúng tôi ngay nhé.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box-list">
+                            <i class="fa-solid fa-wallet"></i>
+                            <h4>Thanh toán</h4> 
+                            <p>Đa dạng hình thức thanh toán</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box-list">
+                            <i class="ti-clipboard"></i>
+                            <h4>Chỉnh sách</h4> 
+                            <p>Đảm bảo uy tín, chất lượng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End: Payment -->
+        </div>
+        
+        <footer id="footer">
+            <div class="container">  
+                <div class="row">
+                    <div class="col-lg-6 footer--main"> 
+                        <a href="index.html"><img src="./images/logo.png" alt="Logo" class="logo"></a>
+                        <p>Panagea là một công ty chuyên cung cấp các dịch vụ du lịch, cung cấp khách sạn, 
+                            nhà hàng, cập nhật các tour du lịch với chất lượng tuyệt vời  
+                            <br>
+                            Panagea rất hân hạnh được đồng hành cùng các bạn trong những chuyến du lịch 
+                            trong tương lai
+                        </p>
+                        <ul>
+                            <li><a href="">Follow us</a></li>
+                            <li><a href=""> <i class="ti-facebook"></i> </a></li>
+                            <li><a href=""> <i class="ti-instagram"></i> </a></li>
+                            <li><a href=""> <i class="ti-stack-overflow"></i> </a></li>
+                            <li><a href=""> <i class="ti-linkedin"></i> </a></li>
+                            <li><a href=""> <i class="ti-twitter-alt"></i> </a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-lg-3 footer--links"> 
+                        <h5>Những liên kết hữu ích</h5> 
+                        <ul>
+                            <li><a href="">Trang chủ</a></li>
+                            <li><a href="">Nhà hàng</a></li>
+                            <li><a href="">Khách sạn</a></li>
+                            <li><a href="">Tours</a></li> 
+                            <li><a href="">Liên hệ</a></li> 
+                        </ul>
+                    </div> 
+                    <div class="col-lg-3 footer--contacts"> 
+                        <h5>Liên hệ</h5>
+                        <i class="ti-mobile">+ 61 23 8093 3400</i>
+                        <i class="ti-email">  baoolink@gmail.com</i> 
+                        <h5>Thư tín</h5>
+                        <div class="form-group">
+                                <input type="email" name="email_newsletter" id="email_newsletter" class="footer--email" placeholder="Your email">
+                                <input type="submit" value="Submit" id="submit-newsletter" class="footer--submit">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </footer>
+    </div>  
+<!-- Start: Modal --> 
+        <div class="modal--overlay">
+            <div class="modal--container">
+                <div class="modal--header">
+                    <h6>Sign in</h6> 
+                    <i class="fa-solid fa-xmark"></i>
+                </div> 
+                <div class="modal--main">
+                    <a href="" class="ti-facebook mb-3">Login with Facebook</a>
+                    <a href="" class="ti-google">Login with Google</a>
+                    <div class="divier">
+                        <span>Or</span>
+                    </div> 
+                    <div class="form-group email-container mb-3">
+                        <label for="">Email</label> 
+                        <input type="email" class="form-control" name="email" id="email"> 
+                        <i class="ti-email"></i>
+                    </div>
+                    <div class="form-group email-container mb-3">
+                        <label for="">Password</label> 
+                        <input type="email" class="form-control" name="email" id="email"> 
+                        <i class="fa-solid fa-lock"></i>
+                    </div> 
+                    <div class="final-main">
+                        <label for="" class="remember"> 
+                            <input type="checkbox">  
+                            <p> Remember me </p>
+                            <a>Forgot Password?</a>
+                        </label>
+                    </div> 
+                    <div class="modal-login-btn mt-3">
+                        Log in
+                    </div> 
+                    <div class="text-center mt-1 modal-signup">
+                        Don't have an account 
+                        <a href="">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: Modal -->
+    <!-- Link CDN JQuery --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Link CDN Owl Carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Link CDN Bootrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link JS -->
+    <script src="./scrips/scrip.js"></script>  
+</body>
+</html>
